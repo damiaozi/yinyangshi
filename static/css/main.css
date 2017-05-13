@@ -1,0 +1,2981 @@
+/*=========================================================
+yys-header start 吴远淼==============================================*/
+
+#yys-header {
+    height: 56px;
+    background: #fbfbfb;
+    /*此处有bug:动画会在顶部导航上面下来 
+   position: relative;
+      z-index: 80px;*/
+}
+
+#yys-header header {
+    position: relative;
+    width: 1000px;
+    height: 56px;
+    margin: auto;
+}
+
+#yys-header .topBar-logo {
+    width: 135px;
+    cursor: pointer;
+}
+
+#yys-header .topBar-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+#yys-header .topBar-right a {
+    box-sizing: border-box;
+    color: #333;
+    display: inline-block;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    padding: 0px 12px;
+    font-size: 12px;
+}
+
+#yys-header .topBar-right a:hover {
+    color: #bc2e2e !important;
+    border-bottom: 3px solid #bc2e2e;
+    background-color: #F3F3F3;
+}
+
+#yys-header .topBar-lqwy {
+    position: relative;
+    top: 4px;
+    left: 3px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#yys-header .topBar-lqwy i {
+    background: url(../images/head/sprite-w_7fc7459.png) no-repeat;
+    width: 9px;
+    height: 4px;
+    float: left;
+    margin: 6px 0 0 4px;
+    background-position: -103px -101px;
+    display: inline-block;
+    -webkit-transition: all .2s ease 0s;
+    transition: all .2s ease 0s;
+}
+
+#yys-header .topBar-xianshi {
+    display: none;
+    width: 1000px;
+    height: 452px;
+    position: absolute;
+    top: 55px;
+    left: -615px;
+    z-index: 999;
+}
+
+
+/**==========================================================
+header中隐藏的导航 吴远淼**/
+
+#yys-banner .top-bar {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    z-index: 200;
+    width: 100%;
+    height: 100px;
+    min-width: 1200px;
+}
+
+
+/*浮动的时候，设置这个类*/
+
+#yys-banner .top-bar-fixed {
+    display: block;
+    margin: 0 auto;
+    z-index: 200;
+    width: 100%;
+    height: 100px;
+    min-width: 1200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .9);
+}
+
+
+/*浮动的时候，设置这个类*/
+
+#yys-banner .top-left-visible {
+    display: block;
+}
+
+#yys-banner .top-left {
+    float: left;
+    padding-left: 15px;
+    padding-top: 13px;
+    display: none;
+}
+
+#yys-banner .download-text {
+    float: left;
+    width: 16px;
+    line-height: 16px;
+    font-size: 16px;
+    color: #000;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+#yys-banner .download-img {
+    float: left;
+    width: 74px;
+    height: 74px;
+    margin-right: 15px;
+}
+
+#yys-banner .top-left .logo_icon {
+    float: left;
+    display: block;
+    width: 74px;
+    height: 74px;
+    margin-left: 15px;
+    background-image: url("../images/big-sprite.png");
+    background-position: -1437px -100px;
+}
+
+#yys-banner .logo-wapper {
+    display: block;
+    float: left;
+    height: 72px;
+    padding-left: 15px;
+    border-left: 1px solid #ccc;
+}
+
+#yys-banner .logo-wapper .name {
+    float: left;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+
+#yys-banner .logo-wapper .name h3 {
+    font-size: 32px;
+    color: #333;
+}
+
+#yys-banner .logo-wapper .name p {
+    font-size: 16px;
+    color: #333;
+}
+
+#yys-banner .topnav_list {
+    float: right;
+    padding-top: 35px;
+    padding-right: 15px;
+}
+
+#yys-banner .topnav_list li {
+    position: relative;
+    float: left;
+    width: 118px;
+    height: 65px;
+}
+
+#yys-banner .topnav_list .nav_items {
+    display: block;
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    line-height: 35px;
+    color: #333;
+    font-size: 16px;
+}
+
+#yys-banner .topnav_list .nav_items:hover {
+    color: #cc4336;
+}
+
+#yys-banner .topnav_list .line {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 8px;
+    width: 15px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-image: url("../images/big-sprite.png");
+    background-position: -1484px -746px;
+}
+
+
+/**===================================================================
+banner 吴远淼**/
+
+#yys-banner .banner-main {
+    position: relative;
+    width: 100%;
+    height: 585px;
+    background: no-repeat url("../images/head/banner_bg.jpg");
+    background-position: top center;
+}
+
+#yys-banner .meinv_animate {
+    position: absolute;
+    width: 556px;
+    height: 781px;
+    background: url("../images/head/banner_meinv.png") 0 0 no-repeat;
+    left: 50%;
+    margin-left: -344px;
+    top: 0;
+    animation: an-meinv 1.5s ease-out;
+}
+
+@keyframes an-meinv {
+    from {
+        top: 781px;
+        opacity: 0.2;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+#yys-banner .shuage_animate {
+    opacity: 0;
+    position: absolute;
+    width: 815px;
+    height: 800px;
+    background: url("../images/head/banner_shuage.png") 0 0 no-repeat;
+    left: 50%;
+    margin-left: -250px;
+    top: 40px;
+    animation: an-shuage 1.5s ease-out;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes an-shuage {
+    from {
+        top: 800px;
+        opacity: 0.2;
+    }
+    to {
+        top: 40px;
+        opacity: 1;
+    }
+}
+
+#yys-banner .slogon-animate {
+    position: absolute;
+    left: 50%;
+    margin-left: -530px;
+    top: 65px;
+    width: 171px;
+    height: 450px;
+    background: url("../images/head/banner_slogon.png") 0 0 no-repeat;
+    animation: an-slogon 2s ease-out;
+}
+
+@keyframes an-slogon {
+    from {
+        top: -450px;
+        opacity: 0.2
+    }
+    to {
+        top: 65px;
+        opacity: 1;
+    }
+}
+
+#yys-banner .logo-animate {
+    opacity: 0;
+    position: absolute;
+    z-index: 30;
+    width: 70px;
+    height: 199px;
+    left: 50px;
+    top: 38px;
+    animation: an-logo 2s ease-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes an-logo {
+    from {
+        left: -120px;
+        opacity: 0.2
+    }
+    to {
+        left: 50px;
+        opacity: 1;
+    }
+}
+
+#yys-banner .logo-animate span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/head/banner_logo.png") 0 0 no-repeat;
+}
+
+#yys-banner .qingwa {
+    display: block;
+    position: absolute;
+    width: 135px;
+    height: 118px;
+    bottom: 3px;
+    left: 50%;
+    margin-left: -535px;
+}
+
+#yys-banner .qingwa img {
+    width: 102px;
+}
+
+#yys-banner .qingwa:hover img {
+    opacity: 0.5;
+}
+
+#yys-banner .qingwa:hover #banner-pop {
+    display: block;
+    /*有bug  这句没生效*/
+}
+
+
+/*=========================================================== 
+点击青蛙弹窗遮照  吴远淼*/
+
+#banner-pop {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    animation: an-popShow .2s ease-out;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes an-popShow {
+    0% {
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        transform: scale(0,0);
+        transform-origin: 10% 90%; 
+    }
+    100% {
+         width: 100%;
+         height: 100%;
+         opacity: 1;
+           transform: scale(1,1);
+           transform-origin: 10% 90%; 
+    }
+}
+
+#banner-pop .pop-container {
+    position: absolute;
+    width: 1400px;
+    height: 724px;
+    background: url(../images/head/banner_pop_bg.png) 0 0 no-repeat;
+    left: 50%;
+    margin-left: -814px;
+    top: 50%;
+    margin-top: -410px;
+}
+
+#banner-pop .pop-close {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 2;
+    width: 33px;
+    height: 33px;
+    background: url("../images/big-sprite.png") no-repeat;
+    background-position: -1440px -1016px;
+    transition: transform .5s;
+}
+
+#banner-pop .pop-close:hover {
+    transform: rotate(180deg);
+}
+
+#banner-pop .pop-wapper {
+    height: 588px;
+    width: 1068px;
+    padding: 35px 0 0 50px;
+    position: absolute;
+    top: 100px;
+    left: 283px;
+}
+
+#banner-pop .pop-left img {
+    width: 880px;
+}
+
+#banner-pop .pop-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#banner-pop .pop-tittle {
+    width: 127px;
+    height: 362px;
+    margin-right: 46px;
+    margin-top: 50px;
+    background: url("../images/big-sprite.png") no-repeat;
+    background-position: 0px 0px;
+}
+
+#banner-pop .pop-right a {
+    position: relative;
+    width: 95px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    background: #c9b27c;
+    border-radius: 5px;
+    padding: 5px;
+    top: 5px;
+    margin-left: 20px;
+}
+
+#banner-pop .pop-right a:hover {
+    background: #e9ce8f;
+}
+
+#banner-pop .pop-erweima {
+    position: absolute;
+    background: url("../images/big-sprite.png") no-repeat;
+    background-position: -696px -189px;
+    width: 256px;
+    height: 177px;
+    bottom: -190px;
+}
+
+
+/*==========================================================================
+yys-download 丁铭------------------------*/
+
+#yys-download {
+    position: absolute;
+    width: 390px;
+    height: 123px;
+    top: 518px;
+    left: 50%;
+    overflow: hidden;
+    margin-left: -148px;
+    z-index: 9;
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+    transition: all .6s;
+}
+
+#yys-download .download {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fccc00;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 0 0 7px 4px #feeb00 inset
+}
+
+#yys-download .down-s {
+    padding: 10px;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    background: #fccc00;
+    /*transition: all 0.5s ease;*/
+    border-radius: 16px 0 0 16px;
+}
+
+#yys-download .down-s>span {
+    background-image: url(../images/big-sprite.png);
+    background-position: -1177px -148px;
+    width: 22px;
+    height: 105px;
+    display: block;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    /*background:#fccc00;*/
+}
+
+#download-z {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#yys-download .download-a {
+    background-image: url(../images/big-sprite.png);
+    background-position: -1482px -969px;
+    margin-right: 10px;
+    float: left;
+    width: 22px;
+    height: 23px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#yys-download .download-text {
+    background-image: url(../images/big-sprite.png);
+    background-position: -1200px -100px;
+    margin-right: 10px;
+    float: left;
+    width: 45px;
+    height: 100px;
+    background-repeat: no-repeat;
+}
+
+#yys-download .download-ewm {
+    float: left;
+    width: 91px;
+    height: 91px;
+    background: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    position: relative;
+}
+
+#yys-download .download-ewm .xian {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: xian 2.5s linear infinite;
+}
+
+@keyframes xian {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(91px);
+    }
+}
+
+#yys-download .download-ewm img {
+    width: 100%;
+}
+
+#yys-download .download-btn {
+    float: left;
+    width: 175px;
+    height: 120px;
+    margin-left: 6px;
+}
+
+#yys-download .APP-store {
+    display: block;
+    margin-bottom: 5px;
+    width: 171px;
+    height: 51px;
+    background-image: url(../images/big-sprite.png);
+    background-position: -1200px -1096px;
+    background-repeat: no-repeat;
+}
+
+#yys-download .APP-store:hover {
+    background-position: -127px -302px;
+    background-repeat: no-repeat;
+}
+
+#yys-download .Android {
+    display: block;
+    margin-bottom: 5px;
+    width: 171px;
+    height: 51px;
+    background-image: url(../images/big-sprite.png);
+    background-position: -626px -1240px;
+    background-repeat: no-repeat;
+}
+
+#yys-download .Android:hover {
+    background-position: -797px -1240px;
+    background-repeat: no-repeat;
+}
+
+
+/*======================================================================================
+yys-side 丁铭----------------------*/
+
+#yys-side {
+    z-index: 10;
+    position: absolute;
+    width: 707px;
+    height: 1181px;
+    background: url(../images/news+download+side/side_bg_b6e5758.png) bottom center no-repeat;
+    left: 50%;
+    margin-left: 242px;
+    top: 401px;
+}
+
+#yys-side .arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 20;
+    top: 140px;
+    left: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #fee300;
+}
+
+#yys-side .sidebar_title {
+    background-image: url(../images/big-sprite.png);
+    background-position: -646px -370px;
+    position: absolute;
+    width: 321px;
+    height: 168px;
+    top: 59px;
+    left: 25px;
+    z-index: 2;
+    background-repeat: no-repeat;
+}
+
+#yys-side .link-list {
+    width: 346px;
+    padding-top: 222px;
+}
+
+#yys-side .link-list a {
+    background-image: url(../images/big-sprite.png);
+    display: block;
+    width: 314px;
+    height: 103px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+    background-repeat: no-repeat;
+}
+
+#yys-side .link-list a:hover {
+    -webkit-transform: translate3d(15px, 0, 0);
+    -moz-transform: translate3d(15px, 0, 0);
+    transform: translate3d(15px, 0, 0);
+}
+
+#yys-side .link-list .odd {
+    float: left;
+    margin-left: 28px;
+}
+
+#yys-side .link-list .icon1 {
+    background-position: 0px -1044px;
+    margin-top: -16px;
+    background-repeat: no-repeat;
+}
+
+#yys-side .link-list a span {
+    display: block;
+    margin: 62px 0 0 17px;
+    color: #000;
+    font-size: 13px;
+}
+
+#yys-side .link-list .icon1 span {
+    margin: 50px 0 0 10px;
+}
+
+#yys-side .link-list .icon2 {
+    background-position: -837px -899px;
+    width: 317px;
+    margin-top: -9px;
+    background-repeat: no-repeat;
+}
+
+#yys-side .link-list .eve {
+    float: right;
+    margin-right: 28px
+}
+
+#yys-side .link-list .icon2 span {
+    margin: 43px 0 0 138px;
+}
+
+#yys-side .link-list .icon3 {
+    background-position: 0px -1147px;
+    width: 321px;
+    height: 93px;
+    margin-top: -7px;
+    background-repeat: no-repeat;
+}
+
+#yys-side .link-list .icon3 span {
+    margin: 50px 0 0 20px;
+}
+
+#yys-side .link-list .icon4 {
+    background-position: -331px -899px;
+    width: 309px;
+    height: 108px;
+    margin-top: -13px;
+    margin-bottom: -7px;
+    background-repeat: no-repeat;
+}
+
+#yys-side .link-list .icon4 span {
+    margin: 53px 0 0 130px;
+}
+
+#yys-side .link-list .icon5 {
+    background-position: -1200px 0px;
+    margin-bottom: -9px;
+    margin-top: -5px;
+    width: 312px;
+    height: 100px;
+    background-repeat: no-repeat;
+}
+
+#yys-side .link-list .icon5 span {
+    margin: 62px 0 0 24px;
+}
+
+#yys-side .link-list .icon6 {
+    background-position: -631px -1044px;
+    width: 312px;
+    height: 108px;
+    background-repeat: no-repeat;
+}
+
+#yys-side .link-list .icon6 span {
+    margin: 46px 0 0 109px;
+}
+
+#yys-side .link-list .icon7 {
+    background-position: 0px -899px;
+    width: 331px;
+    height: 85px;
+    padding-top: 60px;
+    margin-top: -21px;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+#yys-side .link-list .icon7:hover {
+    transform: translate3d(0, 0, 0);
+}
+
+#yys-side .link-list .icon7 span {
+    margin: 2px 0 0 10px;
+}
+
+#yys-side .icon7-z {
+    border-top: 1px solid #000;
+    height: 180px;
+    position: absolute;
+    top: 89px;
+    left: 0;
+    width: 290px;
+    display: none;
+    background: #fccc00;
+    opacity: 1;
+}
+
+#yys-side .icon7-z>span {
+    padding: 3px 0;
+}
+
+#yys-side .link-list .icon8 {
+    background-position: -314px -1044px;
+    width: 317px;
+    height: 102px;
+    margin-top: -48px;
+    background-repeat: no-repeat;
+}
+
+#yys-side .link-list .icon8 span {
+    margin: 42px 0 0 99px;
+}
+
+#yys-side .link-list .icon9 {
+    background-position: -744px -899px;
+    margin-top: -5px;
+    width: 93px;
+    height: 104;
+    background-repeat: no-repeat;
+}
+
+#yys-side .link-list .icon10 {
+    background-position: -551px -208px;
+    margin-top: -5px;
+    margin-left: 7px;
+    width: 93px;
+    height: 104;
+    background-repeat: no-repeat;
+}
+
+#yys-side .link-list .icon11 {
+    background-position: -458px -208px;
+    margin-top: -5px;
+    margin-left: 7px;
+    width: 93px;
+    height: 104px;
+    background-repeat: no-repeat;
+}
+
+#yys-side a.a-x:hover {
+    transform: translateY(15px);
+}
+
+
+/*=========================================================================
+yys-news 丁铭----------------------*/
+
+#yys-news {
+    background: #fff;
+    width: 100%;
+    position: relative;
+    padding-bottom: 49px;
+    height: 300px;
+}
+
+#yys-news .news {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+
+/*--------------------news-banner---------------------*/
+
+#yys-news .news-banner {
+    width: 360px;
+    height: 270px;
+    position: relative;
+    float: left;
+    margin-left: -106px;
+}
+
+#yys-news .banner-ss {
+    width: 360px;
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+}
+
+#yys-news .banner-ss .img {
+    width: 10000px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#yys-news .banner-ss .img img {
+    width: 360px;
+    height: 260px;
+}
+
+#yys-news .banner-ss .img li {
+    float: left;
+    list-style-type: none;
+}
+
+#yys-news .banner-ss .num {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0px;
+    text-align: center;
+    font-size: 0px;
+    cursor: pointer;
+}
+
+#yys-news .banner-ss .num li {
+    width: 8px;
+    height: 8px;
+    margin-left: 6px;
+    display: inline-block;
+    border: 3px solid #e37b63;
+    border-radius: 100%;
+}
+
+#yys-news .banner-ss .num li.on {
+    background-color: #e37b63;
+}
+
+#yys-news .banner-ss .btn_l {
+    left: 0px;
+}
+
+#yys-news .banner-ss .btn_r {
+    right: 0px;
+}
+
+
+/*------------------------news-wrap-----------------------------*/
+
+#yys-news .news-wrap {
+    margin-left: 39px;
+    width: 500px;
+    float: left;
+    height: 270px;
+    position: relative;
+}
+
+#yys-news .tabs {
+    width: 100%;
+    /*max-width: 600px;
+    margin: 50px auto;*/
+}
+
+#yys-news [type="radio"] {
+    display: none;
+}
+
+#yys-news label {
+    cursor: pointer;
+    /*background: -webkit-linear-gradient(#ebcccc, #fff);*/
+    color: #eee;
+    border-radius: 63px 63px 17px 17px;
+    padding: 1.5% 3%;
+    float: left;
+    margin-right: 26px;
+    position: relative;
+    margin-bottom: 2px;
+    /*font: italic 1em cambria;*/
+}
+
+#yys-news .tabs>em {
+    display: block;
+    width: 74px;
+    height: 33px;
+    border-radius: 20px;
+    background: #68d7fc;
+    opacity: 0;
+    transition: all .3s linear;
+    transform: translate3d(0, 10%, 0);
+}
+
+#yys-news .em1 {
+    position: absolute;
+    top: 15px;
+    left: 1px;
+}
+
+#yys-news .em2 {
+    position: absolute;
+    top: 15px;
+    left: 98px;
+}
+
+#yys-news .em3 {
+    position: absolute;
+    top: 15px;
+    left: 196px;
+}
+
+#yys-news .em4 {
+    position: absolute;
+    top: 15px;
+    left: 294px;
+}
+
+#yys-news .em5 {
+    position: absolute;
+    top: 15px;
+    left: 396px;
+}
+
+
+#yys-news input:checked+ em {
+    opacity: 1;
+    transition: all .3s linear;
+    transform: translate3d(0, 0, 0);
+}
+
+#yys-news .panels {
+    float: left;
+    clear: both;
+    position: relative;
+    width: 500px;
+    height: 206px;
+    /*background: #ccc;*/
+    border-radius: 0 10px 10px 10px;
+    top: 12px;
+}
+
+#yys-news .panel {
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    background: #fff;
+    border-radius: 0 0px 10px 10px;
+    /*padding: 4%;*/
+    box-sizing: border-box;
+    height: 205px;
+}
+
+#yys-news .panel::before {
+    content: "";
+    display: block;
+    width: 500px;
+    height: 1px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#yys-news .panel h2 {
+    margin: 0;
+}
+
+#yys-news .tabs input:nth-of-type(1):checked~ .panels .panel:first-child,
+#yys-news .tabs input:nth-of-type(2):checked~ .panels .panel:nth-child(2),
+#yys-news .tabs input:nth-of-type(3):checked~ .panels .panel:nth-child(3),
+#yys-news .tabs input:nth-of-type(4):checked~ .panels .panel:nth-child(4),
+#yys-news .tabs input:nth-of-type(5):checked~ .panels .panel:last-child {
+    opacity: 1;
+    -webkit-transition: .3s;
+    z-index: 100;
+}
+
+#yys-news span {
+    background-image: url(../images/big-sprite.png);
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    width: 44px;
+    height: 30px;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+#yys-news .lab-1 {
+    background-position: -1440px -746px;
+}
+
+#yys-news .lab-2 {
+    background-position: -585px -312px;
+}
+
+#yys-news .lab-3 {
+    background-position: -298px -302px;
+}
+
+#yys-news .lab-4 {
+    background-position: -343px -302px;
+}
+
+#yys-news .lab-5 {
+    background-position: -539px -312px;
+}
+
+#yys-news i {
+    background-image: url(../images/big-sprite.png);
+}
+
+#yys-news .news-wrap .seperate_line {
+    position: absolute;
+    top: 6px;
+    right: -18px;
+    width: 17px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-position: -1492px -696px;
+}
+
+#yys-news .news-wrap .panel {
+    border-top: 1px solid #000;
+}
+
+#yys-news .news-wrap .panel ul {
+    width: 500px;
+    height: 205px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+}
+
+#yys-news .news-wrap .panel ul li {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px dotted #999;
+}
+
+#yys-news .panel ul li:hover a {
+    color: #c1831c;
+}
+
+#yys-news .news-wrap ul li a {
+    color: #333;
+    font-size: 14px;
+    float: left;
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#yys-news .news-wrap ul li em {
+    float: right;
+    font-style: normal;
+    color: #bccddc;
+    font-size: 12px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+
+/*===============================================================
+ 式神 刘金升 =======================*/
+
+
+/*雪碧图大法好*/
+
+#yys-shishen .tab-name.pingan,
+#yys-shishen .com-tabs .sperate-dot,
+#yys-shishen .com-tabs p em,
+#yys-shishen .com-tabs .shishen span,
+#yys-shishen .com-tabs .zhujue span,
+#yys-shishen .shishenlist-container .next,
+#yys-shishen .shishenlist-container .prev,
+#yys-shishen .shishen-wrap ul .shishen-item,
+#yys-shishen .zhujue-info .num,
+#yys-shishen .to-detail {
+    background-image: url(../images/big-sprite.png);
+}
+
+
+/*=================  shishen  nav  start  */
+
+#yys-shishen {
+    position: relative;
+    width: 100%;
+    height: 607px;
+    background: #fff url(../images/strategy_bg_0c2f70e.jpg) bottom center no-repeat;
+}
+
+#yys-shishen .com-tabs {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 42px;
+}
+
+#yys-shishen .tab-name.pingan {
+    float: left;
+    width: 130px;
+    height: 69px;
+    margin-top: 16px;
+    background-position: -1207px -1147px;
+    background-repeat: no-repeat;
+}
+
+#yys-shishen .com-tabs .sperate-dot {
+    display: block;
+    margin-top: 50px;
+    float: left;
+    width: 44px;
+    height: 4px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-position: -1245px -196px;
+}
+
+#yys-shishen .com-tabs p {
+    position: relative;
+    float: left;
+    display: block;
+    width: 100px;
+    height: 91px;
+    margin: 5px 8px 0;
+    cursor: pointer;
+}
+
+#yys-shishen .com-tabs .shishen span {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 27px;
+    width: 70px;
+    height: 33px;
+    background-position: -1122px -601px;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+#yys-shishen .com-tabs p em {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 96px;
+    height: 91px;
+    opacity: 0;
+    background-position: -1200px -200px;
+    background-repeat: no-repeat;
+    transform: translate3d(0, 10%, 0);
+    transition: all .3s linear;
+}
+
+#yys-shishen .com-tabs .zhujue span {
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin: 0 auto;
+    margin-top: 24px;
+    width: 64px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position: -1440px -819px;
+    cursor: pointer;
+}
+
+#yys-shishen .com-tabs .active em,
+#yys-shishen .com-tabs p:hover em {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+
+
+/*=================  shishen  nav  end  */
+
+
+/*=================  shishen  container  start*/
+
+
+/*nav*/
+
+#yys-shishen .pingan-container {
+    position: relative;
+    width: 1200px;
+    height: 304px;
+    margin: 0 auto;
+}
+
+#yys-shishen .pingan-container section {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .3s;
+}
+
+#yys-shishen .shishen-topbar {
+    width: 800px;
+    height: 50px;
+    margin-bottom: 33px;
+    border-bottom: 1px dotted #333;
+}
+
+#yys-shishen .shishen-tabs {
+    float: left;
+    padding-top: 14px;
+    margin-left: 10px;
+}
+
+#yys-shishen .shishen-tabs span {
+    display: block;
+    float: left;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Microsoft JhengHei", 'Microsoft Yahei';
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+#yys-shishen .shishen-tabs span:hover,
+#yys-shishen .shishen-tabs .cur {
+    color: #cea441;
+}
+
+#yys-shishen .btn-viewall {
+    display: block;
+    margin-top: 12px;
+    float: left;
+    width: 131px;
+    height: 29px;
+    background: url(../images/shishen/viewAll_btn_18af8fe.png) no-repeat;
+}
+
+
+/*content*/
+
+#yys-shishen .shishenlist-container {
+    position: relative;
+    width: 850px;
+    height: 220px;
+}
+
+#yys-shishen .shishenlist-container .prev,
+#yys-shishen .shishenlist-container .next {
+    position: absolute;
+    width: 42px;
+    height: 33px;
+    top: 83px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+#yys-shishen .shishenlist-container .prev {
+    display: none;
+    left: -42px;
+    background-position: -1132px -853px;
+    background-repeat: no-repeat;
+}
+
+#yys-shishen .shishenlist-container .next {
+    right: 40px;
+    background-position: -1440px -1049px;
+    background-repeat: no-repeat;
+}
+
+#yys-shishen .shishenlist-container .prev:hover {
+    background-position: -1446px -1096px;
+    background-repeat: no-repeat;
+}
+
+#yys-shishen .shishenlist-container .next:hover {
+    background-position: -1440px -969px;
+    background-repeat: no-repeat;
+}
+
+#yys-shishen .shishen-wrap {
+    width: 782px;
+    height: 210px;
+    position: relative;
+    overflow: hidden;
+}
+
+#yys-shishen .temp-wrap {
+    overflow: hidden;
+    position: absolute;
+    width: 828px;
+}
+
+#yys-shishen .temp-ssr {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    width: 828px;
+}
+
+#yys-shishen .temp-sr {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    width: 828px;
+}
+
+#yys-shishen .temp-r {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    width: 828px;
+}
+
+#yys-shishen .temp-n {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    width: 828px;
+}
+
+#yys-shishen .shishen-wrap .shishen-list {
+    width: 5934px;
+    left: 0px;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+
+#yys-shishen .shishen-wrap .shishen-list ul {
+    float: left;
+    width: 89px;
+    padding: 5px 24px 0 0;
+    height: 202px;
+    border-right: 1px solid #95a7a4;
+    margin-right: 24px;
+}
+
+#yys-shishen .shishen-wrap .shishen-list ul li {
+    width: 89px;
+    height: 92px;
+    margin-bottom: 14px;
+    position: relative;
+}
+
+#yys-shishen .shishen-wrap ul .shishen-item {
+    background-position: -1348px -100px;
+    display: block;
+    width: 89px;
+    height: 92px;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+#yys-shishen .shishen-wrap ul .shishen-item img {
+    width: 82px;
+    height: 82px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+#yys-shishen .shishen-wrap ul .shishen-item .icon-new {
+    display: block;
+    width: 31px;
+    height: 36px;
+    background: url(../images/shishen/new_icon_253bf40.png) no-repeat;
+    position: absolute;
+    top: 4px;
+    right: -10px;
+    z-index: 3;
+}
+
+#yys-shishen .shishen-wrap ul .shishen-item .tb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 89px;
+    height: 92px;
+    background: url(../images/shishen/mask_6b7d844.png) repeat;
+    border-radius: 100%;
+    z-index: 2;
+    display: table;
+    opacity: 0;
+    transition: all .3s;
+}
+
+#yys-shishen .shishen-wrap ul .shishen-item .tr {
+    display: table-row;
+}
+
+#yys-shishen .shishen-wrap ul .shishen-item .td {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#yys-shishen .shishen-wrap ul .shishen-item .td em {
+    display: inline-block;
+    zoom: 1;
+    font-weight: 400;
+    font-style: normal;
+    width: 19px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#yys-shishen .shishen-wrap ul .shishen-item:hover .tb {
+    opacity: 1;
+}
+
+
+/*主角*/
+
+#yys-shishen .zhujue-container {
+    width: 809px;
+    display: none;
+}
+
+#yys-shishen .zhujue-tabs {
+    float: left;
+    width: 150px;
+    padding-top: 20px;
+}
+
+#yys-shishen .zhujue-tabs .zhujue-tab {
+    position: relative;
+    display: block;
+    width: 136px;
+    height: 35px;
+    border: 2px solid #fff;
+    transition: all .3s;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#yys-shishen .zhujue-tabs .zhujue-tab:hover,
+#yys-shishen .zhujue-tabs .zhujue-tab.cur {
+    background: #fff;
+    border: 2px solid #000;
+}
+
+#yys-shishen .zhujue-tabs .zhujue-tab span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+}
+
+#yys-shishen .zhujue-tabs .zhujue-tab em {
+    transition: all .3s;
+    position: absolute;
+    opacity: 0;
+    top: 11px;
+    right: -10px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid #000;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+#yys-shishen .zhujue-tabs .zhujue-tab:hover em,
+#yys-shishen .zhujue-tabs .zhujue-tab.cur em {
+    opacity: 1;
+}
+
+#yys-shishen .zhujue-wrap {
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 0;
+    transition: all .3s;
+}
+
+#yys-shishen .show {
+    display: block;
+}
+
+#yys-shishen .zhujue-pic {
+    float: left;
+    margin-top: -30px;
+    margin-right: 35px;
+}
+
+#yys-shishen .zhujue-info {
+    float: left;
+    width: 227px;
+    padding-top: 40px;
+}
+
+#yys-shishen .zhujue-info .num {
+    display: block;
+    margin-bottom: 10px;
+    width: 38px;
+    height: 23px;
+    background-position: -431px -720px;
+    background-repeat: no-repeat;
+}
+
+#yys-shishen .zhujue-info h3 {
+    line-height: 40px;
+    font-size: 30px;
+    color: #000;
+    border-bottom: 2px solid #000;
+    width: 227px;
+    margin-bottom: 2px;
+    letter-spacing: 2px;
+}
+
+#yys-shishen .zhujue-info p {
+    width: 227px;
+    color: #333;
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 5px;
+    border-top: 1px solid #000;
+    margin-bottom: 19px;
+}
+
+#yys-shishen .to-detail {
+    display: block;
+    width: 55px;
+    height: 43px;
+    background-position: -1440px -776px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#yys-shishen .zhujue-info .num.two {
+    background-position: -1473px -1016px;
+    background-repeat: no-repeat;
+}
+
+#yys-shishen .zhujue-info .num.three {
+    background-position: -469px -720px;
+    background-repeat: no-repeat;
+}
+
+#yys-shishen .zhujue-info .num.four {
+    background-position: -387px -302px;
+    background-repeat: no-repeat;
+}
+
+
+/*================= =================================================================== 
+shishen  container  end  ========================================*/
+
+
+/*================================================================================
+strategy start 蔡雅玲=======*/
+
+#yys-strategy a:hover p {
+    color: #c1831c;
+}
+
+#yys-strategy {
+    width: 1200px;
+    height: 438px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 106px;
+    margin-top: -82px;
+}
+
+
+/*=========search搜索框========*/
+
+#yys-strategy .search {
+    width: 375px;
+    height: 43px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.search .input {
+    width: 320px;
+    height: 39px;
+    border: 3px solid #000;
+}
+
+.search .input:focus {
+    outline: none;
+}
+
+.button {
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    background-position: -1440px -536px;
+    background-image: url(../images/big-sprite.png);
+    right: -2px;
+    bottom: -2px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.button:hover {
+    background-position: -1440px -616px;
+    background-image: url(../images/big-sprite.png);
+    background-repeat: no-repeat;
+}
+
+
+/*========container主要内容========*/
+
+#yys-strategy .container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+
+/*=======left-banner 左边内容======*/
+
+#yys-strategy .left-banner {
+    display: flex;
+    flex-direction: column;
+    width: 372px;
+    height: 432px;
+    border: 3px solid #000;
+}
+
+
+/*========strategy-banner轮播图部分======*/
+
+#yys-strategy .strategy-banner {
+    width: 368px;
+    height: 228px;
+    position: relative;
+    overflow: hidden;
+}
+
+#yys-strategy .strategy-banner .img {
+    width: 10000px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#yys-strategy .strategy-banner .img img {
+    width: 368px;
+    height: 228px;
+}
+
+#yys-strategy .strategy-banner .img li {
+    float: left;
+    list-style-type: none;
+}
+
+#yys-strategy .strategy-banner .num {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0px;
+    text-align: center;
+    font-size: 0px;
+    float: left;
+}
+
+#yys-strategy .strategy-banner .num li {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 5px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px 3px;
+    cursor: pointer;
+}
+
+#yys-strategy .strategy-banner .num li.on {
+    background-color: #000;
+    border: 5px solid #000;
+}
+
+#yys-strategy .strategy-banner .btn {
+    width: 30px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    font-size: 40px;
+    line-height: 50px;
+    cursor: pointer;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "微软雅黑";
+    display: none;
+}
+
+#yys-strategy .strategy-banner:hover .btn {
+    display: block;
+}
+
+
+/*=====strategy-nav下导航部分======*/
+
+#yys-strategy .strategy-nav {
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+}
+
+#yys-strategy .strategy-nav a {
+    float: left;
+    padding-left: 32px;
+    height: 150px;
+    width: 60px;
+}
+
+#yys-strategy .strategy-nav a span {
+    transition: all .3s;
+    float: left;
+    display: block;
+    width: 24px;
+    height: 134px;
+    margin-right: 25px;
+}
+
+#yys-strategy .strategy1 {
+    background-position: -988px -148px;
+    background-image: url(../images/big-sprite.png);
+    background-repeat: no-repeat;
+}
+
+
+/*=====向上移的效果=====*/
+
+#yys-strategy .strategy1:hover,
+.strategy2:hover,
+.strategy3:hover,
+.strategy4:hover {
+    margin-top: -10px;
+}
+
+#yys-strategy .strategy2 {
+    background-position: -1012px -148px;
+    background-image: url(../images/big-sprite.png);
+    background-repeat: no-repeat;
+}
+
+#yys-strategy .strategy3 {
+    background-position: -1036px -148px;
+    background-image: url(../images/big-sprite.png);
+    background-repeat: no-repeat;
+}
+
+#yys-strategy .strategy4 {
+    background-position: -1060px -148px;
+    background-image: url(../images/big-sprite.png);
+    background-repeat: no-repeat;
+}
+
+#yys-strategy .line {
+    float: right;
+    display: block;
+    width: 11px;
+    height: 150px;
+    background-position: -952px -189px;
+    background-image: url(../images/big-sprite.png);
+    background-repeat: no-repeat;
+}
+
+
+/*======right-banner右边top切换======*/
+
+#yys-strategy .right-banner {
+    flex: 3;
+    margin-left: 35px;
+    width: 790px;
+    height: 438px;
+}
+
+#yys-strategy .tabs {
+    width: 774px;
+    height: 110px;
+    margin: 0 auto;
+}
+
+#yys-strategy [type="radio"] {
+    display: none;
+}
+
+#yys-strategy label {
+    cursor: pointer;
+    padding: 1.5% 3%;
+    float: left;
+}
+
+#yys-strategy .panels {
+    float: left;
+    clear: both;
+    position: relative;
+    width: 100%;
+    background: #fff;
+}
+
+#yys-strategy .panel {
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    background: #fff;
+    box-sizing: border-box;
+    border-top: 1px solid #cbcdcc;
+    padding-top: 25px;
+    margin-top: 15px;
+}
+
+#yys-strategy .panel h2 {
+    margin: 0;
+}
+
+#yys-strategy .tabs input:nth-of-type(1):checked~ .panels .panel:first-child,
+#yys-strategy .tabs input:nth-of-type(2):checked~ .panels .panel:nth-child(2),
+#yys-strategy .tabs input:nth-of-type(3):checked~ .panels .panel:nth-child(3),
+#yys-strategy .tabs input:nth-of-type(4):checked~ .panels .panel:nth-child(4),
+#yys-strategy .tabs input:nth-of-type(5):checked~ .panels .panel:last-child {
+    opacity: 1;
+    -webkit-transition: .3s;
+    z-index: 100;
+}
+
+#yys-strategy span {
+    width: 50px;
+}
+
+#yys-strategy .label {
+    position: relative;
+    float: left;
+    display: block;
+    width: 35px;
+    height: 70px;
+    margin: 5px 8px 0;
+    margin-top: -2px;
+}
+
+#yys-strategy .label span {
+    left: -10px;
+}
+
+#yys-strategy .gl {
+    position: relative;
+    z-index: 2;
+    float: left;
+    margin-right: 12px;
+    margin-left: -15px;
+    background-image: url(../images/big-sprite.png);
+    background-position: -1375px -200px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 90px;
+    height: 60px;
+    margin: 5px 8px 0;
+}
+
+#yys-strategy .xs-img {
+    position: relative;
+    z-index: 2;
+    width: 68px;
+    height: 39px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-image: url(../images/big-sprite.png);
+    background-position: -1440px -897px;
+    background-repeat: no-repeat;
+}
+
+#yys-strategy .ss-img {
+    position: relative;
+    z-index: 2;
+    width: 71px;
+    height: 31px;
+    display: block;
+    margin: 0 auto;
+    background-image: url(../images/big-sprite.png);
+    background-position: -1440px -936px;
+    background-repeat: no-repeat;
+    margin-top: 27px;
+}
+
+#yys-strategy .dj-img {
+    position: relative;
+    z-index: 2;
+    margin-top: 24px;
+    width: 73px;
+    height: 38px;
+    display: block;
+    background-image: url(../images/big-sprite.png);
+    background-position: -1371px -1096px;
+    background-repeat: no-repeat;
+}
+
+#yys-strategy .wf-img {
+    position: relative;
+    z-index: 2;
+    margin-top: 29px;
+    width: 80px;
+    height: 31px;
+    display: block;
+    background-image: url(../images/big-sprite.png);
+    background-position: -458px -312px;
+    background-repeat: no-repeat;
+}
+
+#yys-strategy .sperate_dot {
+    background-image: url(../images/big-sprite.png);
+    background-position: -1245px -196px;
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: 50px;
+    float: left;
+    width: 44px;
+    height: 4px;
+    margin-left: 12px;
+}
+
+
+/* hover 上的图片*/
+
+#yys-strategy .em {
+    background-image: url(../images/big-sprite.png);
+    background-position: -1200px -200px;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 96px;
+    height: 91px;
+    opacity: 0;
+    transform: translate3d(0, 20%, 0);
+    transition: all .3s linear;
+    background-repeat: no-repeat;
+}
+
+#yys-strategy .label:hover .em,
+#yys-strategy .qwerty .em {
+    opacity: 1;
+    transform: translate3d(0, 15%, 0);
+}
+
+#yys-strategy .panel ul {
+    float: left;
+    width: 831px;
+    height: 100%;
+    padding-left: 5px;
+}
+
+#yys-strategy .panel ul li {
+    float: left;
+    margin-right: 56px;
+    width: 342px;
+    height: 48px;
+    padding-top: 10px;
+    padding-left: 15px;
+    border-bottom: 1px dotted #333;
+}
+
+#yys-strategy ul li p {
+    position: relative;
+    font-size: 14px;
+    color: #333;
+}
+
+#yys-strategy ul li p i {
+    position: absolute;
+    top: 5px;
+    left: -18px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid #333;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+#yys-strategy ul li em {
+    font-size: 14px;
+    color: #b2afaf;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*=======strategy end========*/
+
+
+/*======================================================================================
+yys-tongren  start   胡风
+====================================================================================*/
+
+#yys-tongren {
+    width: 1220px;
+    margin: 0 auto;
+    margin-top: -25px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+    height: 537px;
+    top: 60px;
+}
+
+
+/*top部分 start*/
+
+#yys-tongren .yys-topbar {
+    width: 1200px;
+    height: 77px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    position: relative;
+}
+
+#yys-tongren .tog-title {
+    background-image: url(../images/big-sprite.png);
+    background-position: -973px -643px;
+    float: left;
+    width: 112px;
+    height: 106px;
+    margin-top: -19px;
+    margin-right: 24px;
+    background-repeat: no-repeat;
+}
+
+#yys-tongren .tog-tabs {
+    position: relative;
+    width: 1062px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+#yys-tongren .tog-tabs li {
+    float: left;
+    width: 155px;
+    height: 75px;
+    border-bottom: 2px solid #000;
+}
+
+#yys-tongren.tongren1 {
+    border: 0;
+}
+
+#yys-tongren .tog-tabs a {
+    position: absolute;
+    display: block;
+    width: 155px;
+    height: 58px;
+    border-left: 1px dotted #000;
+}
+
+.tog-tabs a:hover span,
+.tog-tabs a span,
+.tog-tabs .pppppp span {
+    top: 2px;
+}
+
+.tog-tabs a:hover i,
+.tog-tabs a i,
+.tog-tabs .qqqqqq i {
+    bottom: -20px;
+}
+
+.tog-tabs a span {
+    top: 18px;
+    height: 18px;
+}
+
+.tog-tabs a span,
+.tog-tabs a i {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.to_tuku,
+.tongren_pics li a span em,
+.tog-tabs .tongren1 em,
+.tog-tabs .tongren2 em,
+.tog-tabs .tongren3 em,
+.tog-tabs .tongren4 em,
+.tog-tabs .tongren5 em,
+.tog-tabs .tongren6 em {
+    background-image: url(../images/big-sprite.png);
+}
+
+.to_tuku {
+    background-position: -330px -720px;
+    top: 28px;
+    width: 101px;
+    height: 24px;
+    right: 0;
+    position: absolute;
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    -ms-transition: all .15s linear;
+    -o-transition: all .15s linear;
+    transition: all .15s linear;
+    background-repeat: no-repeat;
+}
+
+.to_tuku:hover {
+    -webkit-transform: translate3d(10px, 0, 0);
+    -moz-transform: translate3d(10px, 0, 0);
+    -ms-transform: translate3d(10px, 0, 0);
+    -o-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+}
+
+.tog-tabs .tongren1 em {
+    background-position: -1440px -674px;
+    width: 72px;
+    background-repeat: no-repeat;
+}
+
+.tog-tabs .tongren2 em {
+    background-position: -805px -539px;
+    width: 70px;
+    height: 17px;
+    background-repeat: no-repeat;
+}
+
+.tog-tabs .tongren3 em {
+    background-position: -1440px -594px;
+    width: 72px;
+    background-repeat: no-repeat;
+}
+
+.tog-tabs .tongren4 em {
+    background-position: -734px -539px;
+    width: 71px;
+    background-repeat: no-repeat;
+}
+
+.tog-tabs .tongren5 em {
+    background-position: -646px -539px;
+    width: 88px;
+    height: 18px;
+    background-repeat: no-repeat;
+}
+
+.tog-tabs .tongren6 em {
+    background-position: -1437px -173px;
+    width: 71px;
+    background-repeat: no-repeat;
+}
+
+.tog-tabs a span em {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.tog-tabs .tongren1 i {
+    background-position: 0 0;
+}
+
+.tog-tabs .tongren2 i {
+    background-position: -165px 0;
+}
+
+.tog-tabs .tongren3 i {
+    background-position: -314px 0;
+}
+
+.tog-tabs .tongren4 i {
+    background-position: -476px 0;
+}
+
+.tog-tabs .tongren5 i {
+    background-position: -924px 0;
+}
+
+.tog-tabs .tongren6 i {
+    background-position: -625px 0;
+}
+
+.tog-tabs a i {
+    bottom: -75px;
+    height: 54px;
+    background: url(../images/tongren/tongren-icons.png);
+}
+
+.tog-tabs a span,
+.tog-tabs a i {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+
+/*top部分 end*/
+
+#yys-tongren .yys-wrap {
+    overflow: hidden;
+    position: relative;
+    width: 1220px;
+    height: 415px;
+}
+
+.tongren_pics_wrap {
+    width: 10000px;
+    left: 0px;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+
+.tongren_pics_wrap ul {
+    display: inline-block;
+}
+
+.yys-wrap .tongren_pics {
+    position: relative;
+    width: 1220px;
+    height: 415px;
+}
+
+.tongren_pics li {
+    float: left;
+    width: 285px;
+    height: 200px;
+    margin: 0 10px 10px;
+}
+
+.tongren_pics li a {
+    display: block;
+    width: 100%;
+    height: 163px;
+    overflow: hidden;
+    position: relative;
+}
+
+.tongren_pics li p {
+    line-height: 42px;
+    color: #666;
+    height: 42px;
+    font-size: 14px;
+}
+
+.tongren_pics li img {
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    width: 100%;
+    height: 100%;
+}
+
+.tongren_pics li a:hover span {
+    display: block\9;
+    opacity: 1;
+}
+
+.tongren_pics li a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: none\9;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    background: url(../images/tongren/mask_6b7d844.png) repeat;
+}
+
+.tongren_pics li a span em {
+    background-position: -1269px -100px;
+    position: absolute;
+    width: 79px;
+    height: 93px;
+    left: 50%;
+    margin-left: -40px;
+    top: 50%;
+    margin-top: -46px;
+    background-repeat: no-repeat;
+}
+
+
+/*==================================================================================
+yys-tongren  end
+================================================================================*/
+
+
+/*===============================================================================
+video and paper start  王鸿儒====================================================*/
+
+#yys-shitu {
+    width: 100%;
+    height: 514px;
+    margin-bottom: 65px;
+    background: url("../images/shitu/video_bg.jpg") 0 0 no-repeat;
+}
+
+.yys-shitu-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 58px;
+}
+
+.yys-video-part,
+.yys-paper-part {
+    width: 580px;
+}
+
+.yys-video-part {
+    float: left;
+}
+
+.yys-paper-part {
+    float: right;
+}
+
+.yys-video-part h3 {
+    float: left;
+    width: 227px;
+    height: 148px;
+    margin-right: 62px;
+    background: url(../images/big-sprite.png) -973px 0 no-repeat;
+}
+
+.yys-video-part h3 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.yys-shitu-wrap a.item {
+    position: relative;
+    float: left;
+    display: block;
+    width: 270px;
+    height: 200px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.yys-shitu-wrap a.item img {
+    display: block;
+    width: 100%;
+    height: 154px;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+.yys-shitu-wrap a.item:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.yys-video-part .yys-name,
+.yys-paper-part .yys-name {
+    font-size: 14px;
+    height: 45px;
+    line-height: 45px;
+    text-indent: 12px;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.yys-video-part .yys-name {
+    color: #000;
+    background: #fff;
+}
+
+.yys-paper-part .yys-name {
+    color: #666;
+}
+
+.yys-paper-part h3 {
+    float: left;
+    width: 248px;
+    height: 148px;
+    margin-right: 42px;
+    background: url(../images/big-sprite.png) -529px -746px no-repeat;
+}
+
+
+/* 视频播放弹窗遮照  吴远淼*/
+
+.yys-videomask {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10000;
+}
+
+.yys-videomask .videomask-close {
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    right: -45px;
+    top: 0;
+    display: block;
+    background: url(../images/big-sprite.png) -1440px -856px no-repeat;
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.yys-videomask .videomask-close:hover {
+    transform: rotate(180deg);
+}
+
+.yys-videomask .videomask-content {
+    z-index: 10000;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -400px;
+    margin-top: -260px;
+}
+
+.yys-videomask .video-wrapper {
+    width: 800px;
+    height: 520px;
+    background-color: #000;
+    border: 2px solid #b59a76;
+    z-index: 10000;
+}
+
+
+/*=============== active start ================*/
+
+.yys-active-wrap {
+    width: 1270px;
+    height: 434px;
+    margin: 0 auto;
+}
+
+.yys-active-logo {
+    float: left;
+    width: 257px;
+    height: 370px;
+    margin-right: 37px;
+    background: url("../images/shitu/activity_title.png") 0 0 no-repeat;
+}
+
+.yys-activity-item-wrap {
+    float: left;
+    /*(270+25*2)*3=960*/
+    width: 960px;
+}
+
+a.yys-activity-item {
+    position: relative;
+    float: left;
+    width: 270px;
+    height: 153px;
+    margin: 0 25px 37px;
+}
+
+a.yys-activity-item img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+a.yys-activity-item:hover img {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+a.yys-activity-item span {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: #fff;
+    padding: 6px;
+    border: 1px solid #fff;
+    font-size: 14px;
+}
+
+
+/*=========== code start============*/
+
+#yys-code {
+    position: relative;
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    padding-bottom: 74px;
+}
+
+.yys-code-logo {
+    float: left;
+    width: 70px;
+    height: 199px;
+    margin-right: 105px;
+    background: url("../images/shitu/logo_text.png");
+}
+
+.yys-code-wrap {
+    position: relative;
+    float: left;
+    width: 270px;
+    height: 180px;
+    padding-top: 20px;
+    margin-right: 117px;
+    background: #f6f6f6;
+}
+
+.yys-code {
+    position: absolute;
+    top: -32px;
+    right: -32px;
+    width: 132px;
+    height: 132px;
+    background: #ffffff;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.yys-code img {
+    width: 100%;
+    height: 100%;
+}
+
+.yys-code-wrap .yys-code-text {
+    margin-left: 30px;
+}
+
+.yys-code-text p {
+    float: left;
+    width: 27px;
+    line-height: 17px;
+}
+
+.yys-wb-text {
+    float: left;
+    width: 24px;
+    height: 96px;
+    background: url("../images/big-sprite.png") -1245px -100px no-repeat;
+}
+
+.yys-wx-text {
+    float: left;
+    width: 24px;
+    height: 119px;
+    background: url("../images/big-sprite.png") -1159px -295px no-repeat;
+}
+
+.yys-code-wrap .yys-line {
+    position: absolute;
+    bottom: 40px;
+    left: 33px;
+    width: 52px;
+    height: 2px;
+    background: #d1d1d1;
+}
+
+.yys-code-wrap .yys-name {
+    position: absolute;
+    bottom: 15px;
+    left: 33px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.yys-code-wrap .yys-name span {
+    color: #d2c199;
+}
+
+.yys-service-part {
+    position: relative;
+    float: left;
+    width: 225px;
+    height: 90px;
+    padding-top: 95px;
+}
+
+.yys-service-phone {
+    position: absolute;
+    left: 0;
+    top: -32px;
+    width: 111px;
+    height: 109px;
+    background: url("../images/big-sprite.png") -1072px -415px no-repeat;
+}
+
+.yys-service-part p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.yys-service-part .yys-tel {
+    font-family: Georgia, "Microsoft Yahei";
+    font-size: 20px;
+}
+
+.yys-service-part .yys-line {
+    position: absolute;
+    width: 52px;
+    height: 2px;
+    background: #d1d1d1;
+    bottom: 22px;
+    left: 0;
+}
+
+.yys-bug {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    color: #c9b27c;
+}
+
+.yys-back-top {
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 80px;
+    width: 25px;
+    height: 111px;
+    z-index: 500;
+    background: url("../images/big-sprite.png") -1047px -415px no-repeat;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.yys-back-top:hover {
+    -webkit-transform: translate(0, -20px);
+    -moz-transform: translate(0, -20px);
+    -ms-transform: translate(0, -20px);
+    -o-transform: translate(0, -20px);
+    transform: translate(0, -20px);
+}
+
+
+/**================================================================================
+footer 吴远淼
+=================================================================================**/
+
+#yys-footer {
+    height: 573px;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+#yys-footer .footer-container {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 130px;
+    height: 518px;
+    width: 100%;
+    max-width: 1920px;
+    background: #fff url("../images/head/footer_bg.jpg") top center no-repeat;
+    background-position: top center;
+}
+
+#yys-footer .footer-tittle {
+    width: 626px;
+    height: 62px;
+    display: block;
+    margin: 0 auto;
+    background-image: url("../images/big-sprite.png");
+    background-position: 0px -1240px;
+}
+
+#yys-footer .ftext {
+    width: 166px;
+    height: 74px;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    margin-left: -83px;
+    background-image: url("../images/big-sprite.png");
+    background-position: -961px -1147px;
+    transition: opacity 1s;
+}
+
+#yys-footer .footer-animate:hover .ftext {
+    opacity: 0;
+}
+
+#yys-footer .footer-animate {
+    width: 330px;
+    height: 330px;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+}
+
+#yys-footer .yaoshi {
+    display: block;
+    width: 74px;
+    height: 118px;
+    background-image: url("../images/big-sprite.png");
+    background-position: -973px -415px;
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    margin-left: -36px;
+    background-repeat: no-repeat;
+    transition: top 1s;
+}
+
+#yys-footer .footer-animate:hover .yaoshi {
+    top: 0px;
+}
+
+#yys-footer .fwapper {
+    width: 152px;
+    height: 152px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -76px;
+    opacity: 0;
+    transition: opacity 1s, top 1s;
+}
+
+#yys-footer .footer-animate:hover .fwapper {
+    opacity: 1;
+    top: 50px;
+}
+
+#yys-footer .fwapper img {
+    width: 100%;
+    height: 100%;
+}
+
+#yys-footer .fwapper p {
+    background-image: url("../images/big-sprite.png");
+    background-position: -646px -189px;
+    position: absolute;
+    top: -10px;
+    right: -45px;
+    width: 50px;
+    height: 182px;
+    background-repeat: no-repeat;
+}
+
+#yys-footer .door {
+    background-image: url("../images/big-sprite.png");
+    background-position: -458px 0px;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    margin-left: -94px;
+    width: 188px;
+    height: 208px;
+    background-repeat: no-repeat;
+    transition: bottom 1s;
+}
+
+#yys-footer .footer-animate:hover .door {
+    bottom: -80px;
+}
+
+#yys-footer footer {
+    position: relative;
+    padding-top: 20px;
+    width: 100%;
+    height: 170px;
+    background: #c3d8e2;
+    z-index: 10;
+    text-align: center;
+}
+
+#yys-footer .footer-share {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#yys-footer .footer-share ul {
+    display: inline-block;
+}
+
+#yys-footer .footer-share li {
+    float: left;
+    margin-right: 5px;
+}
+
+#yys-footer .footer-share li a {
+    display: inline-flex;
+}
+
+#yys-footer .footer-share span {
+    font-size: 14px;
+    color: #82a0b8;
+}
+
+#yys-footer .footer-share li:hover span {
+    color: #ffa500;
+}
+
+#yys-footer .footer-share img {
+    width: 20px;
+    height: 20px;
+}
+
+#yys-footer .cominfo {
+    clear: both;
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#yys-footer .com-logo {
+    float: left;
+}
+
+#yys-footer .com-content {
+    float: left;
+    height: 60px;
+    margin-left: 10px;
+}
+
+#yys-footer .com-content a:hover {
+    text-decoration: underline;
+}
+
+#yys-footer li {
+    float: left;
+    margin-right: 5px;
+}
+
+.footer-text {
+    color: #333;
+    font-size: 12px;
+    font-family: '宋体';
+    line-height: 24px;
+}
+
+#yys-footer .com-jianhu {
+    clear: both;
+    position: relative;
+    text-align: left;
+}
+
+#yys-footer .com-jianhu p {
+    display: inline-block;
+}
+
+#yys-footer .com-jianhu a {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding: 2px;
+    color: #fff;
+    background-color: rgb(97, 0, 0);
+}
+
+#yys-footer .com-jianhu {
+    clear: both;
+}
+
+#yys-footer .other-info {
+    clear: both;
+    text-align: left;
+    width: 800px;
+    margin: 0 auto;
+}
+
+#yys-footer .footer-text {
+    text-align: left;
+}
